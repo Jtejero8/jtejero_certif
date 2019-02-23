@@ -1,0 +1,189 @@
+/* comentarios sobre el css */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+header{
+    margin: 0px;
+    background-color: rgba(167, 213, 250, 0.872);
+    padding: 0px;
+    list-style: none;
+
+}
+
+body {
+    background-color: rgb(251, 252, 252);
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.Marca {
+	font-family: 'Times New Roman', Times, serif;
+	float: right;
+}
+
+.nombre {
+	font-family: 'Dancing Script', cursive;
+	float: right;
+}
+
+/* imagen estilo */
+
+.imagen{
+    margin: 0px;
+    opacity: 40%;
+}
+
+.yo{
+    align-self: center;
+    border-radius: 10px;
+    margin: 15px 20px;
+    display: flex;
+    opacity: 0px;
+    border-radius: 10px;
+
+}
+
+.titulos {
+	text-align: center;
+}
+
+.menu li {
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+
+.menu li a:hover {
+	background: #524ff5;
+}
+
+
+footer .contacto {
+	padding: 60px 0;
+}
+
+footer .contacto .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color: #3895ea;
+	text-align: center;
+}
+
+footer .contacto .formulario {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+	border:2px solid #cecece;
+	border-radius: 5px;
+	padding: 15px 20px;
+	font-size: 20px;
+	color:#a4a4a4;
+}
+
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+	border:2px solid #3895ea;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+	width: 49%;
+	margin-bottom: 15px;
+}
+
+footer .contacto .formulario textarea {
+	width: 100%;
+	height: 100px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height:100px;
+	max-height: 300px;
+	margin-bottom: 15px;
+}
+
+footer .contacto .formulario .boton {
+	margin: auto;
+	background: #3895ea;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	padding: 15px 40px;
+	cursor: pointer;
+}
+
+footer .contacto .formulario .boton:hover {
+	background: #387bea;
+}
+
+footer .redes-sociales {
+	background: #1e2b38;
+	padding: 60px 0;
+}
+
+footer .redes-sociales .contenedor {
+	display: flex;
+	justify-content:center;
+}
+
+footer .redes-sociales a {
+	color: #fff;
+	text-align: center;
+	width: 100px;
+	display: block;
+	padding: 15px 0;
+	border-radius: 3px;
+	font-size: 30px;
+	margin: 0 20px;
+}
+
+footer .redes-sociales .twitter:hover {	background: #1da1f2; }
+footer .redes-sociales .facebook:hover { background: #3b5998; }
+footer .redes-sociales .youtube:hover {	background: #cd201f; }
+footer .redes-sociales .github:hover { background: #666666; }
+footer .redes-sociales .instagram:hover { background: #3f729b; }
+
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 800px) {
+	header .menu {
+		text-align: center;
+	}
+
+	.main .trabajos .contenedor-trabajos .trabajo {
+		width: 46%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header .contenedor-texto .texto .nombre {
+		font-size: 35px;
+	}
+
+	header .contenedor-texto .texto .profesion {
+		font-size: 18px;
+	}
+
+	footer .redes-sociales .contenedor {
+		flex-wrap:wrap;
+		padding: 20px 0;
+	}
+}
