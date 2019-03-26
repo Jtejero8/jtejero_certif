@@ -2,138 +2,205 @@
 
 * {
 	padding: 0;
-	margin: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
 header{
-    margin: 0px;
-    background-color: rgba(167, 213, 250, 0.872);
-    padding: 0px;
-    list-style: none;
-
+	margin: 0px;
+    background-color: rgb(237, 239, 240);
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: space-between;
+	align-items: center;
 }
+	
+	
+	
+
 
 body {
-    background-color: rgb(251, 252, 252);
-    margin: 15px;
+	background-color: #fff;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+	font-size: 25px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
 }
+
+
+
+.contenedor header .menu a {
+	color: #1da1f2;
+	text-decoration: none;
+	margin-left: 25px;
+	font-size: 18px;
+	overflow: visible;
+	
+}
+
+header .menu a:hover {
+	text-decoration: underline;
+}
+
+header .nombre {
+	flex-direction: row;
+	align-items: flex-end;
+	padding: 0 5px;
+	font-family: 'Dancing Script', cursive;
+}
+
 
 .Marca {
 	font-family: 'Times New Roman', Times, serif;
 	float: right;
 }
 
-.nombre {
-	font-family: 'Dancing Script', cursive;
-	float: right;
-}
-
-/* imagen estilo */
-
-.imagen{
-    margin: 0px;
-    opacity: 40%;
-}
-
-.yo{
-    align-self: center;
-    border-radius: 10px;
-    margin: 15px 20px;
+.contenedor {
+	margin: auto;
+    width: 90%;
+    max-width: 1300px;
     display: flex;
-    opacity: 0px;
-    border-radius: 10px;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+	
 }
 
-.titulos {
+h2 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+
+.contenedor .main {
 	text-align: center;
 }
 
-.menu li {
-	display: inline-block;
-	text-align: center;
+.contenedor .main .imagen img {
+	overflow: hidden;
+	width: 100%;
+	vertical-align: top;
+	padding: 0 0 0;
+	max-height: 600px;
+	
+} 
+
+.contenedor .main .YO {
+	overflow: visible;
+	margin-top: -80px;
+	
 }
 
-.menu li a {
-	color: black;
-	text-decoration: none;
-	display: block;
-	padding: 20px;
+.contenedor .main .YO img {
+	border-radius: 100px;
+	vertical-align: top;
+	border-radius: 50%;
+	border: 5px solid lightskyblue;
+
+}
+/* aside trabajos */
+
+aside {
+	width: 100%;
+	margin-top: 45px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
 }
 
-.menu li a:hover {
-	background: #524ff5;
+aside .titulos {
+	padding: 20px 0;
+}
+
+aside .widget .certif a {
+	padding:10px 5px;
+	justify-content: space-around;
+	
+}
+
+aside .widget p {
+	padding: 0px 0px;
+	margin: 20px;
 }
 
 
-footer .contacto {
-	padding: 60px 0;
+aside .trabajos {
+	background: #f1f5fa;
+	padding: 45px 0;
 }
 
-footer .contacto .titulo {
+aside .trabajos .contenedor {
+	overflow: hidden;
+}
+
+aside .trabajos .titulo {
 	font-size: 34px;
 	line-height: 34px;
 	margin-bottom: 40px;
 	font-weight: 300;
-	color: #3895ea;
+	color: #323068;
 	text-align: center;
 }
 
-footer .contacto .formulario {
+aside .trabajos .contenedor-trabajos {
 	display: flex;
+	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:space-between;
 }
 
-footer .contacto .formulario input[type="text"],
-footer .contacto .formulario input[type="email"],
-footer .contacto .formulario textarea {
-	border:2px solid #cecece;
-	border-radius: 5px;
-	padding: 15px 20px;
-	font-size: 20px;
-	color:#a4a4a4;
+aside .trabajos .contenedor-trabajos .trabajo{
+	width: 23%;
+	margin-bottom: 40px;
 }
 
-footer .contacto .formulario input[type="text"]:focus,
-footer .contacto .formulario input[type="email"]:focus,
-footer .contacto .formulario textarea:focus {
-	border:2px solid #3895ea;
-}
-
-footer .contacto .formulario input[type="text"],
-footer .contacto .formulario input[type="email"] {
-	width: 49%;
-	margin-bottom: 15px;
-}
-
-footer .contacto .formulario textarea {
+aside .trabajos .contenedor-trabajos .trabajo .thumb {
 	width: 100%;
-	height: 100px;
-	min-width: 100%;
-	max-width: 100%;
-	min-height:100px;
-	max-height: 300px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
-footer .contacto .formulario .boton {
-	margin: auto;
-	background: #3895ea;
-	color: #fff;
-	border: none;
+aside .trabajos .contenedor-trabajos .trabajo .thumb img {
+	width: 100%;
+	vertical-align: top;
 	border-radius: 3px;
-	padding: 15px 40px;
-	cursor: pointer;
 }
 
-footer .contacto .formulario .boton:hover {
-	background: #387bea;
+aside .trabajos .contenedor-trabajos .trabajo .descripcion {
+	text-align: center;
 }
 
+aside .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+	font-weight: 500;
+	color: #3895ea;
+	margin-bottom: 10px;
+	text-decoration: underline;
+	font-family: 'EB Garamond', serif;
+}
+
+aside .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+	font-size: 14px;
+	color:#636363;
+}
+
+
+
+/* footer */
+
+footer {
+	width: 100%;
+	align-content: center;
+	
+}
 footer .redes-sociales {
 	background: #1e2b38;
 	padding: 60px 0;
@@ -157,32 +224,39 @@ footer .redes-sociales a {
 
 footer .redes-sociales .twitter:hover {	background: #1da1f2; }
 footer .redes-sociales .facebook:hover { background: #3b5998; }
-footer .redes-sociales .youtube:hover {	background: #cd201f; }
+footer .redes-sociales .mail:hover {	background: #cd201f; }
 footer .redes-sociales .github:hover { background: #666666; }
 footer .redes-sociales .instagram:hover { background: #3f729b; }
 
 
 /* ----- ----- MEDIA QUERIES ----- ----- */
-@media screen and (max-width: 800px) {
-	header .menu {
+@media screen and (max-width: 900px) {
+	.contenedor header .menu {
 		text-align: center;
 	}
 
-	.main .trabajos .contenedor-trabajos .trabajo {
+	aside .trabajos .contenedor-trabajos .trabajo {
 		width: 46%;
+	}
+	aside .trabajos .contenedor-trabajos .trabajo .descripcion p {
+		font-size: 25px;
 	}
 }
 
 @media screen and (max-width: 500px) {
-	header .contenedor-texto .texto .nombre {
-		font-size: 35px;
+	.contenedor .main .posts h2 {
+		font-size: 30px;
 	}
 
-	header .contenedor-texto .texto .profesion {
-		font-size: 18px;
+	.contenedor .main .posts p {
+		font-size: 20px;
 	}
 
-	footer .redes-sociales .contenedor {
+	.contenedor aside .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion p {
+		font-size: 15px;
+	}
+
+	.contenedor footer .redes-sociales .contenedor {
 		flex-wrap:wrap;
 		padding: 20px 0;
 	}
