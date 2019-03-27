@@ -48,6 +48,7 @@ body {
 	font-size: 18px;
 	overflow: visible;
 	padding: 20px 0;
+	list-style: none;
 	
 }
 
@@ -265,7 +266,10 @@ footer .redes-sociales .instagram:hover { background: #3f729b; }
 	}
 
 	.contenedor header .logo{
-		visibility: none;
+		max-width: 30px;
+		max-height: 30px;
+		border: solid 2px #1da1f2;
+
 	}
 }
 
