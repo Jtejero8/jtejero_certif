@@ -14,6 +14,7 @@ header{
     background-color: rgb(237, 239, 240);
 	width: 100%;
 	display: flex;
+	padding: 15px;
 	flex-direction: row;
 	flex-wrap: wrap;
     justify-content: space-between;
@@ -265,6 +266,9 @@ footer .redes-sociales .instagram:hover { background: #3f729b; }
 		padding: 20px 0;
 	}
 
+	header {
+		padding: 10px;
+	}
 }
 
 
