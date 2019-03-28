@@ -45,10 +45,10 @@ body {
 .contenedor header .menu a {
 	color: #1da1f2;
 	text-decoration: none;
-	margin-left: 25px;
+	margin-left: 15px;
+	
 	font-size: 18px;
 	overflow: visible;
-	padding: 20px 0;
 	list-style: none;
 	
 }
