@@ -34,11 +34,11 @@ body {
 	
 }
 
-.contenedor header .logo{
-	align-items: flex-end;
-	max-height: 60px;
-	max-width: 60px;
-	margin-right: 2,5px;
+.contenedor header .contenedor-logo img{
+	float: right;
+	max-height: 50px;
+	max-width: 50px;
+	margin-right: 1px;
 	border:solid #1da1f2;
 }
 
@@ -46,7 +46,6 @@ body {
 	color: #1da1f2;
 	text-decoration: none;
 	margin-left: 15px;
-	
 	font-size: 18px;
 	overflow: visible;
 	list-style: none;
@@ -80,7 +79,14 @@ header .nombre {
 	
 }
 
+h1{
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
 h2 {
+	font-size: 35px;
 	margin-top: 10px;
 	margin-bottom: 5px;
 }
@@ -206,6 +212,13 @@ footer {
 	align-content: center;
 	
 }
+
+footer p{
+	font-size: 25px;
+}
+
+
+
 footer .redes-sociales {
 	background: #1e2b38;
 	padding: 60px 0;
@@ -267,8 +280,18 @@ footer .redes-sociales .instagram:hover { background: #3f729b; }
 	}
 
 	header {
-		padding: 10px;
+		padding: 5px;
 	}
+
+	.contenedor header .menu a{
+		margin-left: 5px;
+		font-size: 15px;
+	}
+
+	footer p{
+		font-size: 15px;
+	}
+
 }
 
 
