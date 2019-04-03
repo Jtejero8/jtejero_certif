@@ -12,13 +12,15 @@
 header{
 	margin: 0px;
     background-color: rgb(237, 239, 240);
-	width: 100%;
+	width: 90%;
 	display: flex;
-	padding: 15px;
+	padding: 5px;
 	flex-direction: row;
 	flex-wrap: wrap;
     justify-content: space-between;
 	align-items: center;
+	position: fixed;
+
 }
 
 
@@ -94,6 +96,7 @@ h2 {
 
 .contenedor .main {
 	text-align: center;
+	margin-top: 54px;
 }
 
 .contenedor .main .imagen img {
