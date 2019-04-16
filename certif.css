@@ -31,7 +31,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	
+	background: url(./background/light-grey-terrazzo.png);
 }
 
 .contenedor header .contenedor-logo img{
